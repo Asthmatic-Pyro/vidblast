@@ -1,3 +1,1 @@
-# Vidblast Control Repo
-
-This repo tracks Vidblast-related configs, scripts, and deployment notes for OpenClaw.
+# Vidblast — Local Dev Setup\n\nThis is a reconstructed, editable version of the Vidblast UI served by OpenClaw Gateway.\n\n## How to run\n\n1. Install dependencies:\n   ```bash\n   npm install\n   ```\n2. Start dev server:\n   ```bash\n   npm run dev\n   ```\n3. Open http://localhost:3000\n\n> Note: This is a static reconstruction. Full functionality (e.g., video upload, frame extraction) requires connection to the OpenClaw Gateway backend.
