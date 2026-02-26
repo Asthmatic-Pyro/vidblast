@@ -1,0 +1,4 @@
+name: VidBlast Heartbeat
+on:
+  schedule:
+    - cron: */30
