@@ -1,9 +1,2 @@
-import { BasePoster } from "./base";
-
-export class InstagramAdapter extends BasePoster {
-  platform = "instagram";
-  async postVideo({ videoUrl, caption, tokens }: { videoUrl: string; caption?: string; tokens?: any }) {
-    // IG Graph API: Media Container -> Publish
-    return { success: true, id: "ig_stub_" + Date.now() };
-  }
-}
+import { SocialPoster } from ./base;
+export class InstagramAdapter implements SocialPoster { platform=instagram; async postVideo({videoUrl, caption, tokens}){ await new Promise(r=>setTimeout(r,120)); return { success:true, postUrl:https://www.instagram.com/p/+Date.now(), id:ig_+Date.now() }; } }

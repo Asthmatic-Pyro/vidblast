@@ -1,3 +1,1 @@
-export const startBlastWorkflow = async (blast:any)=>{
-  return {ok:true, blastId: blast?.id||blast_+Date.now()};
-};
+export const startBlastWorkflow = async (payload:any)=>{ return {ok:true, blastId:blast_+Date.now()}; };

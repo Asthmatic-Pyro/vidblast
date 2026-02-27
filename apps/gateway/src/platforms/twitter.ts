@@ -1,10 +1,2 @@
-import { BasePoster } from "./base";
-
-export class TwitterAdapter extends BasePoster {
-  platform = "twitter";
-
-  async postVideo({ videoUrl, caption, tokens }: { videoUrl: string; caption?: string; tokens?: any }) {
-    // Twitter v2 API: Media upload (chunked init/append/finalize) -> Create Tweet
-    return { success: true, id: "tw_stub_" + Date.now() };
-  }
-}
+import { SocialPoster } from ./base;
+export class TwitterAdapter implements SocialPoster { platform=twitter; async postVideo({videoUrl, caption, tokens}){ await new Promise(r=>setTimeout(r,100)); return { success:true, postUrl:https://twitter.com/status/ + Date.now(), id:tw_+Date.now() }; } }

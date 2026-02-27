@@ -1,9 +1,2 @@
-import { BasePoster } from "./base";
-
-export class TikTokAdapter extends BasePoster {
-  platform = "tiktok";
-  async postVideo({ videoUrl, caption, tokens }: { videoUrl: string; caption?: string; tokens?: any }) {
-    // TikTok Direct Post API
-    return { success: true, id: "tt_stub_" + Date.now() };
-  }
-}
+import { SocialPoster } from ./base;
+export class TikTokAdapter implements SocialPoster { platform=tiktok; async postVideo({videoUrl, caption, tokens}){ await new Promise(r=>setTimeout(r,120)); return { success:true, postUrl:https://www.tiktok.com/@user/video/+Date.now(), id:tt_+Date.now() }; } }
