@@ -1,0 +1,1 @@
+# VidBlast MVP scaffold
